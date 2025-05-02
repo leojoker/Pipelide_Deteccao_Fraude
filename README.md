@@ -1,71 +1,102 @@
-# 🛡️ Fraud Detection Pipeline – Power BI + Python
+# 🛡️ Pipeline de Detecção de Fraudes com Python e Power BI
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org)
-[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)]()
-[![License](https://img.shields.io/badge/license-MIT-green.svg)]()
+Este projeto implementa uma **pipeline completa de Machine Learning** para detecção de fraudes em operações financeiras, utilizando **Python**, **Power BI** e técnicas de aprendizado supervisionado. O objetivo é prever automaticamente se uma transação é suspeita ou legítima, com visualizações integradas no Power BI para tomada de decisão.
 
-Este projeto implementa uma pipeline completa para detecção de fraudes utilizando Python, Machine Learning e visualização com Power BI. Os dados são simulados com base em cenários reais de transações suspeitas e previsões são feitas com base em um modelo Random Forest.
+![Banner](.github/profile/fraud-detection-banner.png)
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📊 Dashboard Interativo (Power BI)
+
+Explore o painel com os principais insights da análise de fraudes:
+
+🔗 [Clique aqui para visualizar o dashboard no Power BI Web](https://app.powerbi.com/view?r=eyJrIjoiMTk0ZDVmMDEtZGQxYS00MjVkLTgxODktNGY2ZDdmZjhjZWQwIiwidCI6IjI3MTA1ZGYzLTBhYmItNGMyMy05NmQyLTk2N2FiMmEyNmQ5YSJ9)
+
+> O dashboard exibe a distribuição das fraudes por canal, estado civil, tempo de relacionamento e faixa de renda, com filtros dinâmicos e métricas de impacto financeiro.
+
+---
+
+## 🧰 Tecnologias Utilizadas
+
+### 🚀 Linguagens e Plataformas
+- **Python 3.13**
+- **Power BI Desktop + Web**
+- **Jupyter Notebook**
+
+### 📦 Principais Bibliotecas Python
+- `pandas` – manipulação de dados
+- `numpy` – operações numéricas
+- `scikit-learn` – machine learning (Random Forest, split, encoding, métricas)
+- `joblib` – persistência de modelo
+- `seaborn` e `matplotlib` – visualização de dados
+- `openpyxl` – exportação de resultados em Excel
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```
-fraud-detection-pipeline/
+Pipelide_Deteccao_Fraude/
 ├── data/
-│   ├── raw/                # dados_coletados.csv
-│   ├── new/                # novos_dados.csv
-│   └── output/             # previsoes_fraude.xlsx (gerado)
+│   ├── raw/               # Dados originais
+│   ├── new/               # Novos dados para predição
+│   └── output/            # Resultados gerados
+├── notebooks/
+│   └── fraud-detection-prediction-pipeline.ipynb
+├── src/
+│   ├── gerar_modelo.py    # Script de treinamento
+│   └── gerar_previsoes.py # Script de predição
 ├── models/
 │   └── modelo_treinado_fraude.pk
-├── dashboard/
-│   └── analise_risco.pbix
-├── notebooks/
-│   └── DeployProducao.ipynb
-├── src/
-│   ├── gerar_modelo.py
-│   └── gerar_previsoes.py
+├── images/
+│   └── dashboard_powerbi.png
+├── .github/
+│   └── profile/
+│       └── fraud-detection-banner.png
 ├── requirements.txt
-├── .gitignore
 └── README.md
 ```
 
 ---
 
-## 🚀 Como Executar
+## ⚙️ Como Executar
 
-### 1. Treinar o modelo
 ```bash
+# Clonar o repositório
+git clone https://github.com/leojoker/Pipelide_Deteccao_Fraude.git
+cd Pipelide_Deteccao_Fraude
+
+# Criar ambiente virtual (opcional)
+python -m venv venv
+source venv/bin/activate  # ou venv\Scripts\activate no Windows
+
+# Instalar dependências
+pip install -r requirements.txt
+
+# Rodar o notebook
+jupyter notebook notebooks/fraud-detection-prediction-pipeline.ipynb
+
+# Ou executar os scripts separadamente
 python src/gerar_modelo.py
-```
-
-### 2. Gerar previsões com novos dados
-```bash
 python src/gerar_previsoes.py
 ```
 
-### 3. Abrir o dashboard Power BI
-Abra `dashboard/analise_risco.pbix` no Power BI Desktop.
+---
+
+## 📷 Visualização do Dashboard
+
+![Dashboard Power BI](images/dashboard_powerbi.png)
 
 ---
 
-## 📊 Tecnologias Utilizadas
-
-- Python 3.11
-- Pandas, Scikit-learn, Joblib
-- Power BI Desktop
-- Jupyter Notebook
-
----
-
-## 📌 Autor
+## 👤 Autor
 
 **Leonardo Barbosa**  
-Cientista de Dados com foco em soluções aplicadas a risco, prevenção de fraudes e inteligência analítica.  
-📫 [linkedin.com/in/leonardo-barbosa](https://www.linkedin.com/in/leonardo-barbosa777/))
+Cientista de Dados com foco em prevenção de fraudes, análise preditiva e visual analytics.  
+📫 [linkedin.com/in/leonardo-barbosa](https://www.linkedin.com/in/leonardo-barbosa777)
 
 ---
 
 ## 📝 Licença
 
-MIT – Sinta-se livre para usar e adaptar este projeto.
+MIT – Este projeto é livre para uso educacional e profissional.
