@@ -85,7 +85,7 @@ python src/gerar_previsoes.py
 
 ## 📷 Visualização do Dashboard
 
-![Dashboard Power BI](images/dashboard_powerbi.png)
+![Dashboard Power BI](Images/dashboard_powerbi.png)
 
 ---
 
