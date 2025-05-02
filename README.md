@@ -2,7 +2,7 @@
 
 Este projeto implementa uma **pipeline completa de Machine Learning** para detecção de fraudes em operações financeiras, utilizando **Python**, **Power BI** e técnicas de aprendizado supervisionado. O objetivo é prever automaticamente se uma transação é suspeita ou legítima, com visualizações integradas no Power BI para tomada de decisão.
 
-![Banner](.github/profile/fraud-detection-banner.png)
+![Banner](.github/profile/banner.png)
 
 ---
 
