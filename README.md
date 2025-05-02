@@ -1,5 +1,12 @@
 # 🛡️ Pipeline de Detecção de Fraudes com Python e Power BI
 
+
+[![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)](https://www.python.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)](https://jupyter.org)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi)](https://powerbi.microsoft.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![LinkedIn](https://img.shields.io/badge/Autor-Leonardo%20Barbosa-blue?logo=linkedin)](https://www.linkedin.com/in/leonardo-barbosa777)
+
 Este projeto implementa uma **pipeline completa de Machine Learning** para detecção de fraudes em operações financeiras, utilizando **Python**, **Power BI** e técnicas de aprendizado supervisionado. O objetivo é prever automaticamente se uma transação é suspeita ou legítima, com visualizações integradas no Power BI para tomada de decisão.
 
 ![Banner](.github/profile/banner.png)
